@@ -30,11 +30,15 @@ vnoremap <leader>d "_d
 nnoremap <leader>x "_x
 vnoremap <leader>x "_x
 nnoremap <F3> :PyLint<CR>
+inoremap <F3> <Esc>:PyLint<CR>
+nnoremap <F4> :cnext<CR> 
+inoremap <F4> <Esc>:cnext<CR>a
 :filetype plugin indent on
 let g:pymode_folding = 0 
 let g:pymode_syntax_space_errors = 0
 let g:pymode_utils_whitespaces = 0
 let g:pymode_lint_write = 0
 let g:pymode_lint_ignore = "E501,W293,E128"
+
 " Disable autocomment
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
