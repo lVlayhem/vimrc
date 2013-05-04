@@ -42,3 +42,7 @@ let g:pymode_lint_ignore = "E501,W293,E128"
 
 " Disable autocomment
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+nnoremap <F5> :set invpaste paste?<CR>
+set pastetoggle=<F5>
+set showmode
