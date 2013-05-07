@@ -46,7 +46,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 nnoremap <F5> :set invpaste paste?<CR>
 set pastetoggle=<F5>
 set showmode
-
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
