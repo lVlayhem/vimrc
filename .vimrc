@@ -12,6 +12,7 @@ set mouse=a
 set incsearch
 set hlsearch
 set clipboard=unnamedplus
+set scrolloff=3
 colorscheme inkpot
 filetype indent on
 " Press Space to turn off highlighting and clear any message already displayed.
@@ -36,9 +37,9 @@ inoremap <F4> <Esc>:cnext<CR>a
 :filetype plugin indent on
 let g:pymode_folding = 0 
 let g:pymode_syntax_space_errors = 0
-let g:pymode_utils_whitespaces = 0
 let g:pymode_lint_write = 0
-let g:pymode_lint_ignore = "E501,W293,E128"
+" let g:pymode_lint_ignore = "E501,W293,E128,E124"
+let g:pymode_lint_ignore = "E128,E501"
 
 " Disable autocomment
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -46,4 +47,5 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 nnoremap <F5> :set invpaste paste?<CR>
 set pastetoggle=<F5>
 set showmode
+
 set t_Co=256
