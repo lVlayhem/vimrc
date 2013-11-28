@@ -38,8 +38,8 @@ inoremap <F4> <Esc>:cnext<CR>a
 let g:pymode_folding = 0 
 let g:pymode_syntax_space_errors = 0
 let g:pymode_lint_write = 0
-" let g:pymode_lint_ignore = "E501,W293,E128,E124"
-let g:pymode_lint_ignore = "E128,E501"
+" let g:pymode_lint_ignore = "W293"
+let g:pymode_lint_ignore = "E128,E501,E124"
 
 " Disable autocomment
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
