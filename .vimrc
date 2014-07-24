@@ -6,6 +6,7 @@ set sta
 set et
 set fo=croql
 set ignorecase
+set smartcase
 set nowrap
 set whichwrap+=<,>,h,l,[,]
 set mouse=a
