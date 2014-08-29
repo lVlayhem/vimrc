@@ -27,20 +27,17 @@ set keymap=russian-jcukenwin " ^6 to change
 set iminsert=0 " latin by default
 set imsearch=0 " latin by default
 :inoremap <c-z> <c-^>
-nnoremap <leader>d "_d
-vnoremap <leader>d "_d
-nnoremap <leader>x "_x
-vnoremap <leader>x "_x
 nnoremap <F3> :PyLint<CR>
 inoremap <F3> <Esc>:PyLint<CR>
 nnoremap <F4> :cnext<CR> 
+nnoremap <Tab> za
 inoremap <F4> <Esc>:cnext<CR>a
 :filetype plugin indent on
-let g:pymode_folding = 0 
+let g:pymode_folding = 1
 let g:pymode_syntax_space_errors = 0
 let g:pymode_lint_write = 0
-" let g:pymode_lint_ignore = "W293"
-let g:pymode_lint_ignore = "E128,E501,E124"
+let g:pymode_lint_ignore = "E128,E501,E124,W293"
+let g:pymode_utils_whitespaces = 0
 
 " Disable autocomment
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -50,3 +47,14 @@ set pastetoggle=<F5>
 set showmode
 
 set t_Co=256
+
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window.
+  set lines=999 columns=999
+endif
+
+set guioptions-=T  "remove toolbar
+
+let g:session_autosave = 'yes'
+let g:session_autoload = 'yes'

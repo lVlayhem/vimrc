@@ -48,26 +48,26 @@ endif
 
 if has("gui_running")
     if ! g:inkpot_black_background
-        hi Normal         gui=NONE   guifg=#cfbfad   guibg=#1e1e27
+        hi Normal         gui=NONE   guifg=#eeeeee   guibg=#080808
     else
-        hi Normal         gui=NONE   guifg=#cfbfad   guibg=#000000
+        hi Normal         gui=NONE   guifg=#eeeeee   guibg=#000000
     endif
 
     hi CursorLine         guibg=#2e2e37
 
-    hi IncSearch      gui=BOLD   guifg=#303030   guibg=#cd8b60
-    hi Search         gui=NONE   guifg=#303030   guibg=#ad7b57
-    hi ErrorMsg       gui=BOLD   guifg=#ffffff   guibg=#ce4e4e
-    hi WarningMsg     gui=BOLD   guifg=#ffffff   guibg=#ce8e4e
+    hi IncSearch      gui=BOLD   guifg=#000000   guibg=#af5f00
+    hi Search         gui=NONE   guifg=#000000   guibg=#af5f00
+    hi ErrorMsg       gui=BOLD   guifg=#ce2b4b   guibg=NONE
+    hi WarningMsg     gui=BOLD   guifg=#ae5e5e   guibg=NONE
     hi ModeMsg        gui=BOLD   guifg=#7e7eae   guibg=NONE
     hi MoreMsg        gui=BOLD   guifg=#7e7eae   guibg=NONE
     hi Question       gui=BOLD   guifg=#ffcd00   guibg=NONE
 
-    hi StatusLine     gui=BOLD   guifg=#b9b9b9   guibg=#3e3e5e
-    hi User1          gui=BOLD   guifg=#00ff8b   guibg=#3e3e5e
-    hi User2          gui=BOLD   guifg=#7070a0   guibg=#3e3e5e
-    hi StatusLineNC   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
-    hi VertSplit      gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
+    hi StatusLine     gui=BOLD   guifg=#b9b9b9   guibg=#262626
+    hi User1          gui=BOLD   guifg=#00af5f   guibg=#262626
+    hi User2          gui=BOLD   guifg=#7070a0   guibg=#262626
+    hi StatusLineNC   gui=NONE   guifg=#b9b9b9   guibg=#262626
+    hi VertSplit      gui=NONE   guifg=#b9b9b9   guibg=#262626
 
     hi WildMenu       gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
 
@@ -81,33 +81,33 @@ if has("gui_running")
     hi DiffDelete     gui=NONE   guifg=#ffffcd   guibg=#6d3030
     hi DiffAdd        gui=NONE   guifg=#ffffcd   guibg=#306d30
 
-    hi Cursor         gui=NONE   guifg=#404040   guibg=#8b8bff
+    hi Cursor         gui=NONE   guifg=#080808   guibg=#eeeeee
     hi lCursor        gui=NONE   guifg=#404040   guibg=#8fff8b
     hi CursorIM       gui=NONE   guifg=#404040   guibg=#8b8bff
 
-    hi Folded         gui=NONE   guifg=#cfcfcd   guibg=#4b208f
-    hi FoldColumn     gui=NONE   guifg=#8b8bcd   guibg=#2e2e2e
+    hi Folded         gui=NONE   guifg=#cfcfcd   guibg=NONE
+    hi FoldColumn     gui=NONE   guifg=#8b8bcd   guibg=NONE
 
-    hi Directory      gui=NONE   guifg=#00ff8b   guibg=NONE
-    hi LineNr         gui=NONE   guifg=#8b8bcd   guibg=#2e2e2e
+    hi Directory      gui=BOLD   guifg=#eeeeee   guibg=NONE
+    hi LineNr         gui=NONE   guifg=#5f5fff   guibg=NONE
     hi NonText        gui=BOLD   guifg=#8b8bcd   guibg=NONE
     hi SpecialKey     gui=BOLD   guifg=#ab60ed   guibg=NONE
     hi Title          gui=BOLD   guifg=#af4f4b   guibg=NONE
     hi Visual         gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
 
-    hi Comment        gui=NONE   guifg=#cd8b00   guibg=NONE
+    hi Comment        gui=NONE   guifg=#5f5f5f   guibg=NONE
     hi Constant       gui=NONE   guifg=#ffcd8b   guibg=NONE
-    hi String         gui=NONE   guifg=#ffcd8b   guibg=#404040
-    hi Error          gui=NONE   guifg=#ffffff   guibg=#6e2e2e
-    hi Identifier     gui=NONE   guifg=#ff8bff   guibg=NONE
+    hi String         gui=NONE   guifg=#ffaf00   guibg=NONE
+    hi Error          gui=NONE   guifg=#ffffff   guibg=#5f0000
+    hi Identifier     gui=NONE   guifg=#00afff   guibg=NONE
     hi Ignore         gui=NONE
-    hi Number         gui=NONE   guifg=#f0ad6d   guibg=NONE
-    hi PreProc        gui=NONE   guifg=#409090   guibg=NONE
-    hi Special        gui=NONE   guifg=#c080d0   guibg=NONE
+    hi Number         gui=NONE   guifg=#af5f00   guibg=NONE
+    hi PreProc        gui=NONE   guifg=#00af5f   guibg=NONE
+    hi Special        gui=NONE   guifg=#af5fff   guibg=NONE
     hi SpecialChar    gui=NONE   guifg=#c080d0   guibg=#404040
-    hi Statement      gui=NONE   guifg=#808bed   guibg=NONE
-    hi Todo           gui=BOLD   guifg=#303030   guibg=#d0a060
-    hi Type           gui=NONE   guifg=#ff8bff   guibg=NONE
+    hi Statement      gui=BOLD   guifg=#eeeeee   guibg=NONE
+    hi Todo           gui=BOLD   guifg=#080808   guibg=#afaf5f
+    hi Type           gui=BOLD   guifg=#eeeeee   guibg=NONE
     hi Underlined     gui=BOLD   guifg=#df9f2d   guibg=NONE
     hi TaglistTagName gui=BOLD   guifg=#808bed   guibg=NONE
 
@@ -176,7 +176,7 @@ else
     exec "hi DiffDelete     cterm=NONE   ctermfg=" . <SID>X(79) . " ctermbg=" . <SID>X(32)
     exec "hi DiffAdd        cterm=NONE   ctermfg=" . <SID>X(79) . " ctermbg=" . <SID>X(20)
 
-    exec "hi Folded         cterm=NONE   ctermfg=" . <SID>X(79) . " ctermbg=" . <SID>X(35)
+    exec "hi Folded         cterm=NONE   ctermfg=" . <SID>X(79) . " ctermbg=" . <SID>X(80)
     exec "hi FoldColumn     cterm=NONE   ctermfg=" . <SID>X(39) . " ctermbg=" . <SID>X(80)
 
     exec "hi Directory      cterm=NONE   ctermfg=" . <SID>X(28) . " ctermbg=" . "NONE"
