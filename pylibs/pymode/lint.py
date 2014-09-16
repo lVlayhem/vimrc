@@ -62,9 +62,6 @@ def run_checkers(task=None, checkers=None, ignore=None, buffer=None, select=None
             task.done += part
 
     result = filter(lambda e: _ignore_error(e, select, ignore), result)
-    for x in result:
-        x['filename'] = ''
-        del x['bufnr']
     result = sorted(result, key=lambda x: x['lnum'])
 
     if task:
