@@ -27,17 +27,19 @@ set keymap=russian-jcukenwin " ^6 to change
 set iminsert=0 " latin by default
 set imsearch=0 " latin by default
 :inoremap <c-z> <c-^>
-nnoremap <F3> :PyLint<CR>
-inoremap <F3> <Esc>:PyLint<CR>
+nnoremap <F3> :PymodeLint<CR>
+inoremap <F3> <Esc>:PymodeLint<CR>
 nnoremap <F4> :cnext<CR> 
 nnoremap <Tab> za
 inoremap <F4> <Esc>:cnext<CR>a
 :filetype plugin indent on
-let g:pymode_folding = 1
+let g:pymode_folding = 0
 let g:pymode_syntax_space_errors = 0
 let g:pymode_lint_write = 0
 let g:pymode_lint_ignore = "E128,E501,E124,W293"
 let g:pymode_utils_whitespaces = 0
+let g:pymode_python = 'python3'
+let g:pymode_options_colorcolumn = 0
 
 " Disable autocomment
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -56,5 +58,5 @@ endif
 
 set guioptions-=T  "remove toolbar
 
-let g:session_autosave = 'yes'
-let g:session_autoload = 'yes'
+let g:session_autosave = 'no'
+let g:session_autoload = 'no'
